@@ -1,75 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Papífero - Camisetas ecológicas</title>
-<style>
-body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
-header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
-nav { background: #388e3c; padding: 10px; text-align: center; }
-nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-.hero { background: #a5d6a7; padding: 40px 20px; text-align: center; }
-.hero h1 { font-size: 2.5em; margin: 0; }
-.hero p { font-size: 1.2em; }
-.products { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
-.product { background: white; border: 1px solid #ccc; border-radius: 5px; margin: 10px; width: 250px; text-align: center; padding: 15px; }
-.product img { width: 100%; height: auto; border-radius: 5px; }
-.product h3 { margin: 10px 0 5px; }
-.product p { font-size: 14px; color: #555; }
-.buy-btn { background: #2e7d32; color: white; border: none; padding: 10px 20px; cursor: pointer; margin-top: 10px; border-radius: 4px; }
-footer { background: #1b5e20; color: white; text-align: center; padding: 15px; margin-top: 40px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sebastián V. Candelario — Ingeniería Ambiental</title>
+  <meta name="description" content="Perfil profesional de Sebastián V. Candelario — Ingeniero en Plant & Energy, especializado en Medio Ambiente." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#10b981;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071124 0%, #08121b 60%);}
+    .container{max-width:1000px;margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:76px;height:76px;border-radius:12px;background:linear-gradient(135deg,#123 10%, #024 90%);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start;margin-top:28px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .about p{line-height:1.6;color:#d7e6f6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .side .contact-item{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+    .section{margin-top:20px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    footer{margin-top:40px;color:var(--muted);text-align:center;font-size:13px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.avatar{width:60px;height:60px}}
+    /* simple smooth scroll */
+    html{scroll-behavior:smooth}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0284c7);color:white;text-decoration:none;font-weight:600}
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SV</div>
+        <div>
+          <div style="font-weight:700">Sebastián V. Candelario</div>
+          <div style="font-size:13px;color:var(--muted)">Ingeniería Ambiental — Plant & Energy Engineering</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
 
-<header>
-<h1>Papífero</h1>
-<p>Camisetas ecológicas con estilo consciente</p>
-</header>
+    <main class="hero">
+      <section class="card about">
+        <h1>Sebastián V. Candelario</h1>
+        <div class="lead">Ingeniero en Plant & Energy, especializado en medio ambiente. Actualmente cursando maestría en MCI — Environmental, Process & Energy Engineering.</div>
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#productos">Productos</a>
-<a href="#contacto">Contacto</a>
-</nav>
+        <div class="section">
+          <h3 style="margin:0 0 8px 0">Resumen</h3>
+          <p>Me dedico a la ingeniería de plantas y energía con foco en soluciones ambientales y eficiencia de procesos. Tengo experiencia en modelado de procesos, evaluación de impacto ambiental, optimización energética y gestión de proyectos.</p>
+        </div>
 
-<section class="hero">
-<h1>¡Vístete con causa!</h1>
-<p>Diseños únicos en algodón orgánico, hechos para cuidar el planeta.</p>
-</section>
+        <div class="section">
+          <h3 style="margin:0 0 8px 0">Habilidades</h3>
+          <div class="skills">
+            <div class="chip">Simulación de procesos</div>
+            <div class="chip">Balance de masa y energía</div>
+            <div class="chip">Evaluación ambiental</div>
+            <div class="chip">Análisis de ciclo de vida (LCA)</div>
+            <div class="chip">Eficiencia energética</div>
+            <div class="chip">Matlab / Python</div>
+            <div class="chip">Modelado en Aspen / EBSILON</div>
+          </div>
+        </div>
 
-<section id="productos" class="products">
-<div class="product">
-<img src="https://via.placeholder.com/250x250?text=Camiseta+Verde" alt="Camiseta Verde">
-<h3>Camiseta Verde</h3>
-<p>100% algodón orgánico. Disponible en todas las tallas.</p>
-<button class="buy-btn" onclick="alert('Simulación de compra - Integrar con MercadoPago o PayPal')">Comprar - $20</button>
-</div>
+        <div class="section">
+          <h3 style="margin:0 0 8px 0">Educación</h3>
+          <p><strong>Maestría (en curso)</strong> — MCI: Environmental, Process & Energy Engineering<br>
+          <strong>Ingeniería</strong> — Plant & Energy Engineering (Ingeniería Ambiental)</p>
+        </div>
 
-<div class="product">
-<img src="https://via.placeholder.com/250x250?text=Camiseta+Blanca" alt="Camiseta Blanca">
-<h3>Camiseta Blanca</h3>
-<p>Con el logo de Papífero. Suave y resistente.</p>
-<button class="buy-btn" onclick="alert('Simulación de compra - Integrar con MercadoPago o PayPal')">Comprar - $22</button>
-</div>
+        <div class="section" id="experience">
+          <h3 style="margin:0 0 8px 0">Experiencia destacada</h3>
+          <ul style="color:var(--muted)">
+            <li>Proyectos de optimización energética en plantas industriales.</li>
+            <li>Evaluaciones de impacto ambiental y mitigación.</li>
+            <li>Modelado de procesos y análisis termodinámico.</li>
+          </ul>
+        </div>
 
-<div class="product">
-<img src="https://via.placeholder.com/250x250?text=Camiseta+Negra" alt="Camiseta Negra">
-<h3>Camiseta Negra</h3>
-<p>Edición limitada, con estampado sostenible.</p>
-<button class="buy-btn" onclick="alert('Simulación de compra - Integrar con MercadoPago o PayPal')">Comprar - $25</button>
-</div>
-</section>
+      </section>
 
-<section id="contacto" style="text-align: center; padding: 40px;">
-<h2>¿Tienes preguntas?</h2>
-<p>Escríbenos a <a href="mailto:contacto@papifero.com">contacto@papifero.com</a> o síguenos en redes sociales.</p>
-</section>
+      <aside class="card side">
+        <div class="contact">
+          <h3 style="margin:0 0 12px 0">Contacto</h3>
+          <div class="contact-item"><strong>Email:</strong> <a href="mailto:sebastian@example.com">sebastian@example.com</a></div>
+          <div class="contact-item"><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/sebastian-v-candelario</a></div>
+          <div class="contact-item"><strong>Ubicación:</strong> Vienna, Austria</div>
+          <div style="margin-top:12px"><a class="btn" href="#contact">Enviar mensaje</a></div>
+        </div>
 
-<footer>
-<p>&copy; 2025 Papífero. Todos los derechos reservados.</p>
-</footer>
+        <div class="section" style="margin-top:18px">
+          <h4 style="margin:0 0 8px 0">Proyectos</h4>
+          <div class="projects">
+            <div class="project">
+              <strong>Optimización energética — Planta X</strong>
+              <div style="font-size:13px;color:var(--muted);margin-top:6px">Reducción de consumo y mejora de rendimiento térmico.</div>
+            </div>
+            <div class="project">
+              <strong>Estudio LCA — Sistema Y</strong>
+              <div style="font-size:13px;color:var(--muted);margin-top:6px">Evaluación de huella de carbono para alternatives tecnológicas.</div>
+            </div>
+          </div>
+        </div>
 
+      </aside>
+    </main>
+
+    <section class="card section" id="projects">
+      <h3 style="margin-top:0">Proyectos & Portafolio</h3>
+      <p style="color:var(--muted)">Aquí puedes listar enlaces a papers, presentaciones, repositorios o enlaces a documentos descargables (PDF).</p>
+      <div style="margin-top:12px"><a class="btn" href="#">Ver CV / Descargar PDF</a></div>
+    </section>
+
+    <section class="card section" id="contact">
+      <h3 style="margin-top:0">Contacto</h3>
+      <p style="color:var(--muted)">¿Quieres colaborar o necesitas información sobre un proyecto? Envíame un correo o conecta en LinkedIn.</p>
+      <form action="mailto:sebastian@example.com" method="post" enctype="text/plain">
+        <label style="display:block;margin-top:8px;color:var(--muted)">Tu nombre</label>
+        <input type="text" name="name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6" />
+        <label style="display:block;margin-top:8px;color:var(--muted)">Mensaje</label>
+        <textarea name="message" rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#e6eef6"></textarea>
+        <div style="margin-top:10px"><button type="submit" class="btn">Enviar</button></div>
+      </form>
+    </section>
+
+    <footer>
+      © " + new Date().getFullYear() + " Sebastián V. Candelario — Todos los derechos reservados
+    </footer>
+  </div>
+
+  <script>
+    // small helper to replace the footer year (for static file fallback)
+    try{
+      document.querySelector('footer').innerHTML = '© ' + new Date().getFullYear() + ' Sebastián V. Candelario — Todos los derechos reservados';
+    }catch(e){}
+  </script>
 </body>
 </html>
